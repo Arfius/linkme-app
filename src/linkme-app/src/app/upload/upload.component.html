@@ -1,0 +1,7 @@
+<form #uploadform="ngForm" (ngSubmit)="doUpload()">
+  <div class="form-group">
+    <input type="file" class="form-control-file" id="file" name="file"  (change)="onFileChange($event)" accept=".json" #fileInput >
+    <br/>
+    {{loading_status}}
+  </div>
+</form>

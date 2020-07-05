@@ -1,0 +1,22 @@
+<table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Surname</th>
+            <th scope="col">Birthday</th>
+            <th scope="col">City</th>
+            <th scope="col">ZipCode</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr  *ngFor="let customer of list">
+            <th>{{customer.id}}</th>
+            <td>{{customer.name}}</td>
+            <td>{{customer.surname}}</td>
+            <td>{{customer.birthday | date }}</td>
+            <td>{{customer.city}}</td>
+            <td>{{customer.zipcode}}</td>
+          </tr>
+        </tbody>
+      </table>
